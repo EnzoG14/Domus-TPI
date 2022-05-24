@@ -1,0 +1,28 @@
+.inicioLogo{
+    width: 15%;
+    height: auto;
+    border-radius: 10px;
+    /* margin-left: auto;
+    margin-right: auto;
+    padding: 24px; */
+    margin: 24px auto 24px auto;
+    
+}
+
+.headerInicio{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px;
+    margin-top: 10px;
+}
+
+.separadorHeader{
+    height: 3rem;
+    background-color: rgba(178, 209, 255, 1)
+}

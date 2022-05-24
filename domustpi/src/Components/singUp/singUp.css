@@ -1,0 +1,15 @@
+.anchoContainer{
+    width:25% !important;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 10px;
+}
+.alinearTexto{
+    text-align:center;
+}
+
+.colorFondo{
+    height: 19.8rem;
+    background-color: #E5F0FF;
+    display:flex;
+}

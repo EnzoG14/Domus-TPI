@@ -1,0 +1,32 @@
+.wrapTitulo{
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.color-nav1{
+    background-color: rgba(0, 0, 0, 0.233);
+    padding: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.fondo{
+    border-radius: 0% !important;
+    border: none !important;
+    background-color: rgba(178, 209, 255, 1) !important;
+}
+
+.imgInicio{
+    width: fit-content;
+    height: auto;
+    
+}
+
+.wrapComponente{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
