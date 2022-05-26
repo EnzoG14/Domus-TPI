@@ -5,11 +5,11 @@ import Pagination from 'react-bootstrap/Pagination'
 const Paginacion = () => {
     return (
       <div style={{ display: "flex", justifyContent: "center"}}>
-        <><Pagination className = "mx-auto">
+        <><Pagination className = "Pagin mx-auto">
           <Pagination.First />
           <Pagination.Prev />
           <Pagination.Item>{1}</Pagination.Item>
-          <Pagination.Ellipsis />
+          <Pagination.Ellipsis/>
         
           <Pagination.Item>{4}</Pagination.Item>
           <Pagination.Item>{5}</Pagination.Item>

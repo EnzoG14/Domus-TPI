@@ -1,5 +1,5 @@
 import React from 'react'
-import { SingUp,Header,HeaderIniciarSesion} from '../../Components'
+import { SingUp,Header,HeaderIniciarSesion,FooterGeneral} from '../../Components'
 import Container from 'react-bootstrap/Container'
 const IniciarSesion = () => {
     return (
@@ -7,6 +7,7 @@ const IniciarSesion = () => {
             <Header />
             <HeaderIniciarSesion />
             <SingUp className="fondo"/>
+            <FooterGeneral/>
         </div>
     )
 }

@@ -47,7 +47,7 @@ const Venta = () => {
             </Col>
             <Col xs="auto">
                 <div className="d-grid gap-2 btn-caja">
-                        <Button variant="primary" size="lg">
+                        <Button className="btn-customize" variant="primary" size="lg">
                             Asentar el pago
                         </Button>
                         <Button variant="secondary" size="lg">

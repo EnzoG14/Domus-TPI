@@ -1,8 +1,9 @@
 import React from 'react'
-import { HeaderSecretariaDC, ClienParticular, ClienCorporativo, ActualizarCliente } from '../../Components'
+import { HeaderSecretariaDC, ClienParticular, ClienCorporativo, ActualizarCliente, FooterGeneral } from '../../Components'
 import Button from 'react-bootstrap/Button'
 import Link from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
+import Stack from 'react-bootstrap/Stack';
 
 class Clientes extends React.Component{
     constructor(props) {
@@ -51,15 +52,18 @@ class Clientes extends React.Component{
             <HeaderSecretariaDC />
             
             <Container className="mr-50 ml-50">
+            <Stack direction="horizontal" className="alignItem" >
             <Button onClick={this._onButtonClick} variant="primary">Nuevo Cliente</Button>
             <Button onClick={this._onButtonClick2} variant="primary">Nuevo Cliente Corporativo</Button>
             <Button onClick={this._onButtonClick3} variant="primary">Actualizar Cliente</Button>
-            
+            </Stack>
             {this.state.showComponent1 ? <ClienParticular /> :null}
             {this.state.showComponent2 ? <ClienCorporativo /> :null}
             {this.state.showComponent3 ? <ActualizarCliente /> :null}
 
             </Container>
+
+            <FooterGeneral/>
         </>
     )
 }}

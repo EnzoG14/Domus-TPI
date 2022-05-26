@@ -1,5 +1,5 @@
 import React from 'react'
-import {HeaderSecretariaDC,PropMod} from '../../Components';
+import {HeaderSecretariaDC,PropMod, FooterGeneral} from '../../Components';
 // import HeaderCatalogo from './Components/HeaderCatalogo.jsx';
 // import Propiedad from './Components/Propiedad.jsx';
 
@@ -37,23 +37,19 @@ function ModificarCatalogo() {
                     {direccion:'Hernandarias 526',
                       precio:'$1,200,000',
                       descripcion:'lorem ipsun',
-                    imagen:'https://images.adsttc.com/media/images/622b/9c0b/6a2b/af01/6506/d38b/newsletter/004-ok.jpg?1647025197'},
-                    {direccion:'Av Velez Sarfield 749',
-                      precio:'$1,300,000',
-                      descripcion:'lorem ipsun',
-                    imagen:'https://st.depositphotos.com/1898669/1846/i/600/depositphotos_18468017-stock-photo-colonial-brick-house.jpg'}]
+                    imagen:'https://images.adsttc.com/media/images/622b/9c0b/6a2b/af01/6506/d38b/newsletter/004-ok.jpg?1647025197'}]
   
     return (
-      <div>
-    <HeaderSecretariaDC/>
-    <div className="col-12 p-5 row gap-4 justify-content-center">
-    {propMods.map(propMod=>(
-              
-              <PropMod direccion={propMod.direccion} precio={propMod.precio} descripcion={propMod.descripcion} imagen={propMod.imagen}/>
+    <div>
+      <HeaderSecretariaDC/>
+      <div className="col-12 p-5 row gap-4 justify-content-center">
+        {propMods.map(propMod=>(
+                  
+                  <PropMod direccion={propMod.direccion} precio={propMod.precio} descripcion={propMod.descripcion} imagen={propMod.imagen}/>
 
-            ))}
+                ))}
       </div>
-    
+      <FooterGeneral/>
     </div>
     );
 }

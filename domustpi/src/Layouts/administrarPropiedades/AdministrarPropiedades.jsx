@@ -1,5 +1,5 @@
 import React from 'react'
-import {Header,SeccionPropiedadAdmin} from '../../Components'
+import {Header,SeccionPropiedadAdmin,FooterGeneral} from '../../Components'
 
 const AdministrarPropiedades = () => {
     return (
@@ -7,6 +7,8 @@ const AdministrarPropiedades = () => {
             <Header />
             <SeccionPropiedadAdmin/>
             <SeccionPropiedadAdmin/>
+            <SeccionPropiedadAdmin/>
+            <FooterGeneral/>
         </>
     )
 }

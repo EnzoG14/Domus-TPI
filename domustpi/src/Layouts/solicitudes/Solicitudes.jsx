@@ -1,5 +1,5 @@
 import React from 'react'
-import {HeaderSecretariaDC, Solic} from '../../Components'
+import {HeaderSecretariaDC, Solic,FooterGeneral} from '../../Components'
 import './Solicitudes.css'
 
 const Solicitudes = () => {
@@ -10,6 +10,7 @@ const Solicitudes = () => {
                 <h2>Solicitudes</h2>
                 <Solic/>
             </div>
+            <FooterGeneral/>
         </>
     )
 }

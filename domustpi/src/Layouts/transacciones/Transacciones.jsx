@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeaderSecretariaDC, Alquiler, Venta, Paginacion, EncabezadoTransaccion, ComponenteTransaccion, EncabezadoEyS, ComponenteEyS, BotonCierreCaja, RangoFecha} from '../../Components'
+import { HeaderSecretariaDC, Alquiler, Venta, Paginacion, EncabezadoTransaccion, ComponenteTransaccion, EncabezadoEyS, ComponenteEyS, BotonCierreCaja, RangoFecha, FooterGeneral} from '../../Components'
 import Container from 'react-bootstrap/Container'
 
 const Transacciones = () => {
@@ -22,12 +22,14 @@ const Transacciones = () => {
             </div>
             <Paginacion />
             <BotonCierreCaja />
-            <h2>Transacciones</h2>
+            <h2>Transacciones</h2> 
             <RangoFecha />
             <div>
                 <EncabezadoTransaccion />
             </div>
+            <Paginacion />
         </Container>
+        <FooterGeneral/>
         </>
     )
 }

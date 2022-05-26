@@ -23,12 +23,12 @@ export default class SignUp extends Component {
           />
         </div>
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+          <a type="submit" className="btn btn-primary" href="/Perfil">
             Iniciar Sesion
-          </button>
+          </a>
         </div>
         <p className="forgot-password text-right">
-          ¿Olvido su contraseña? <a href="/sign-in">Recuperar</a>
+          ¿Olvido su contraseña? <a href="/iniciarsesion">Recuperar</a>
         </p>
       </form>
       </div>

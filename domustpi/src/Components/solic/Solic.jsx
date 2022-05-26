@@ -13,7 +13,7 @@ const Solic = () => {
                 <Accordion.Body> ID Propiedad Solicitada: NCF-423 </Accordion.Body>
                 <Accordion.Body> 
                     <div className="d-grid gap-2">
-                        <Button variant="primary" size="lg">
+                        <Button className="btn-customize" variant="primary" size="lg">
                             Confirmar cita
                         </Button>
                         <Button variant="secondary" size="lg">

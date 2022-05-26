@@ -6,7 +6,7 @@ import './BotonCierreCaja.css';
 const BotonCierreCaja = () => {
     return (
         <div className="d-grid gap-2 btn-caja">
-            <Button variant="primary" size="lg">
+            <Button className="btn-customize" variant="primary" size="lg">
             Cerrar caja
             </Button>
             <Button variant="secondary" size="lg">

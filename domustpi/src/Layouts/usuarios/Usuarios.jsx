@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeaderSecretariaDC, Paginacion,EncabezadoLista,ComponenteLista } from '../../Components'
+import { HeaderSecretariaDC, Paginacion,EncabezadoLista,ComponenteLista, FooterGeneral } from '../../Components'
 import './Usuarios.css'
 const Usuarios = () => {
     return (
@@ -10,6 +10,8 @@ const Usuarios = () => {
                 <EncabezadoLista />
             </div>
             <Paginacion />
+
+            <FooterGeneral/>
         </>
     )
 }

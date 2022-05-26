@@ -1,11 +1,11 @@
 import React from 'react'
-import { Header,BannerPerfil} from '../../Components'
+import { Header,BannerPerfil,FooterGeneral} from '../../Components'
 const Perfil = () => {
     return (
         <>
             <Header />
             <BannerPerfil />
-          
+            <FooterGeneral />
         </>
     )
 }
