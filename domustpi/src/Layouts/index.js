@@ -11,3 +11,4 @@ export {default as ModificarCatalogo} from './modificarCatalogo/ModificarCatalog
 export {default as Transacciones} from './transacciones/Transacciones'
 export {default as Usuarios} from './usuarios/Usuarios'
 export {default as Solicitudes} from './solicitudes/Solicitudes'
+export {default as CalendarioAgentesInmobiliarios} from './calendarioAgentesInmobiliarios/CalendarioAgentesInmobiliarios'

@@ -1,7 +1,9 @@
 import React from "react";
 import './App.css';
 import { Route, Routes } from 'react-router-dom'
-import {Inicio,Catalogo,IniciarSesion,Perfil,AdministrarPropiedades,VentaPropiedad,SecretariaDC,QuienesSomos,Clientes,ModificarCatalogo,Transacciones,Usuarios,Solicitudes} from  './Layouts'
+import {Inicio,Catalogo,IniciarSesion,Perfil,AdministrarPropiedades,
+  VentaPropiedad,SecretariaDC,QuienesSomos,Clientes,ModificarCatalogo,
+  Transacciones,Usuarios,Solicitudes,CalendarioAgentesInmobiliarios} from  './Layouts'
 
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
         <Route exact path="/transacciones" element={<Transacciones/>} />
         <Route exact path="/usuarios" element={<Usuarios/>} />
         <Route exact path="/solicitudes" element={<Solicitudes/>} />
+        <Route exact path="/calendarioAgenteInmobiliario" element={<CalendarioAgentesInmobiliarios/>} />
       </Routes>
       </div>
     );

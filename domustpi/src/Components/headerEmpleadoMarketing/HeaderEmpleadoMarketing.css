@@ -1,0 +1,35 @@
+.logo{
+    margin-left: 0rem;
+    border-radius: 10px;
+    margin-right: 10px;
+    height: 60px;
+    width: 60px;
+}
+.navBar{
+    padding: 10px;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: rgba(178, 209, 255, 1);
+    justify-content: space-between;
+}
+
+
+.color-navS{
+    background-color: rgba(193, 178, 255);
+}
+
+/* .end-0{
+    margin-right: 8rem
+} */
+
+.color-button{
+    background-color: rgba(70, 0, 101);
+}
+
+.btn-customize {
+    color: #fff  ;
+    background-color: rgba(70, 0, 101) !important; 
+    border-color: rgba(70, 0, 101) !important ;
+}
+
