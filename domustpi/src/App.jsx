@@ -3,7 +3,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom'
 import {Inicio,Catalogo,IniciarSesion,Perfil,AdministrarPropiedades,
   VentaPropiedad,SecretariaDC,QuienesSomos,Clientes,ModificarCatalogo,
-  Transacciones,Usuarios,Solicitudes,CalendarioAgentesInmobiliarios} from  './Layouts'
+  Transacciones,Usuarios,Solicitudes,CalendarioAgentesInmobiliarios, CatalogoAgentesInmobiliarios} from  './Layouts'
 
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
         <Route exact path="/usuarios" element={<Usuarios/>} />
         <Route exact path="/solicitudes" element={<Solicitudes/>} />
         <Route exact path="/calendarioAgenteInmobiliario" element={<CalendarioAgentesInmobiliarios/>} />
+        <Route exact path="/catalogoAgenteInmobiliario" element={<CatalogoAgentesInmobiliarios/>} />
       </Routes>
       </div>
     );
