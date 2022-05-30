@@ -1,12 +1,12 @@
 import React,{useState} from 'react';
 import {InfoPropietario} from '../../Components'
-import './PropiedadesAgentes.css';
+import './EditarPropiedadesMarketing.css';
 import {Button} from 'react-bootstrap';
 
 
 
 
-function PropiedadesAgentes  ()  {
+function EditarPropiedadesMarketing  ()  {
 
     const [boton , setBoton] = useState(false);
     function Show() {
@@ -41,10 +41,13 @@ function PropiedadesAgentes  ()  {
                             Informacion Propietario
                         </Button>
                         {boton ? <InfoPropietario/>:null}
+                    {/* boton de dos opciones desplegable */}
+                    {/* <Button onClick={()=>_onButtonClick()} variant="primary">Editar galeria</Button>
+                            {actpresen ? <ActualizarPresentacion /> :null} */}
                 </div>
             </div>
         </section>
   );
 }
 
-export default PropiedadesAgentes;
+export default EditarPropiedadesMarketing;

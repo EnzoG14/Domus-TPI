@@ -6,7 +6,7 @@ import {Inicio,Catalogo,IniciarSesion,Perfil,AdministrarPropiedades,
   Transacciones,Usuarios,Solicitudes,CalendarioAgentesInmobiliarios,
   CatalogoAgentesInmobiliarios, InformacionPropiedad, CatalogoEmpMarketing, ActualizarPropiedades,
   VisualizarPropiedadesAgentesInmobiliarios,InicioAutenticado,CatalogoAutenticado, 
-  CajasCajera,EntSalCajera,TransaccionesCajera, PerfilAgenteInm} from  './Layouts'
+  CajasCajera,EntSalCajera,TransaccionesCajera, PerfilAgenteInm, PerfilCajera, VisualizarPropiedadEmpMarketing} from  './Layouts'
 
 
 function App() {
@@ -33,12 +33,14 @@ function App() {
         <Route exact path="/catalogoEmpMarketing" element={<CatalogoEmpMarketing/>} />
         <Route exact path="/actualizarPropiedades" element={<ActualizarPropiedades/>} />
         <Route exact path="/VisualizarPropiedadesAgentesInmobiliarios" element={<VisualizarPropiedadesAgentesInmobiliarios/>} />
+        <Route exact path="/visualizarPropiedadEmpMarketing" element={<VisualizarPropiedadEmpMarketing/>} />
         <Route exact path="/inicioAutenticado" element={<InicioAutenticado/>}/>
         <Route exact path="/catalogoAutenticado" element={<CatalogoAutenticado/>}/>
         <Route exact path="/cajasCajera" element={<CajasCajera/>} />
         <Route exact path="/entSalCajera" element={<EntSalCajera/>} />
         <Route exact path="/transaccionesCajera" element={<TransaccionesCajera/>} />
         <Route exact path="/perfilAgenteInm" element={<PerfilAgenteInm/>}/>
+        <Route exact path="/perfilCajera" element={<PerfilCajera/>}/>
       </Routes>
       </div>
     );

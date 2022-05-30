@@ -18,14 +18,6 @@ class PropMod extends Component {
     render() {
     return (
     <Card style={{ width: '18rem' }}>
-    <FloatingLabel controlId="floatingSelect" label="Estado de disponibilidad">
-          <Form.Select aria-label="Floating label select example">
-            <option value="1">Vendida</option>
-            <option value="2">Alquilada</option>
-            <option value="3">Para Vender</option>
-            <option value="3">Para Alquilar</option>
-          </Form.Select>
-    </FloatingLabel>
     <Card.Img variant="top" src={this.props.imagen} className="ImgPropiedad"/>
     <Card.Body>
         <Card.Title>{this.props.direccion}</Card.Title>
@@ -33,7 +25,7 @@ class PropMod extends Component {
         {this.props.descripcion}
         </Card.Text>
         {/* <Card.Text>{this.props.precio}</Card.Text> */}
-        <Button variant="outline-dark" href="/ventapropiedad" className="mb-2">Visualizar propiedad</Button>
+        <Button variant="outline-dark" href="/visualizarPropiedadEmpMarketing" className="mb-2">Visualizar propiedad</Button>
         <Button variant="outline-dark" href="/actualizarPropiedades" >Actualizar presentación</Button>
     </Card.Body>
     </Card>

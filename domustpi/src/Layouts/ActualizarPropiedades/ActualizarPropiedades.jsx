@@ -1,12 +1,12 @@
 import React,{useState} from 'react'
-import {HeaderEmpleadoMarketing, FooterGeneral, SeccionPropiedadAdmin} from '../../Components';
+import {HeaderEmpleadoMarketing, FooterGeneral, EditarImagen, PropiedadesAgentes, EditarPropiedadesMarketing} from '../../Components';
 
 const ActualizarPropiedades = () => {
 
     return (
         <>
             <HeaderEmpleadoMarketing/>
-            <SeccionPropiedadAdmin/>
+            <EditarPropiedadesMarketing/>
             <FooterGeneral/>
         </>
     )

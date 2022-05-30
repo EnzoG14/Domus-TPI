@@ -4,7 +4,7 @@ const PerfilAgenteInm = () => {
     return (
         <>
             <HeaderAgentesInmobiliarios />
-            <BannerPerfilUsuarios Usuario="Agente Inmobiliario" />
+            <BannerPerfilUsuarios Usuario="Bienvenido Agente Inmobiliario" />
             <FooterGeneral />
         </>
     )
