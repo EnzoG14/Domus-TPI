@@ -51,10 +51,9 @@ function Catalogo() {
 
             ))}
       </div>
-    
+    <FooterGeneral/>
     </div>
     );
-    <FooterGeneral/>
 }
 
 export default Catalogo;

@@ -1,7 +1,27 @@
 .header2{
     display: inline-block;
-
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0% !important;
+    padding: .375rem .75rem !important;
 }
-.color-nav1{
-    background-color: rgb(54, 66, 230);
+
+.posNav{
+    display: flex;
+    justify-content: center;
+}
+
+.botonBuscar{
+    display: inline-block !important;
+    align-content: center;
+    width: 20%;
+    font-size: 1rem !important;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: .375rem .75rem !important;
+}
+
+.barraUbicacion{
+    margin-left:1rem!important;
+
 }

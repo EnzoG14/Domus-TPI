@@ -6,13 +6,13 @@ const BotonesCambiarVistas = () => {
     return (
         <div className="d-grid gap-2 btn-caja">
             <Button className="btn-customize" variant="primary" size="lg" href="/calendarioAgenteInmobiliario">
-            Cerrar caja
+            Agente Inmobiliario
             </Button>
-            <Button variant="secondary" size="lg">
-            Imprimir balance
+            <Button variant="secondary" size="lg" href="/catalogoEmpMarketing">
+            Empleado Marketing
             </Button>
-            <Button variant="secondary" size="lg">
-            Imprimir balance
+            <Button variant="secondary" size="lg" href="/transaccionesCajera">
+            Cajera
             </Button>
             <Button variant="secondary" size="lg">
             Imprimir balance

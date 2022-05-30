@@ -1,8 +1,19 @@
-import React from 'react';
+import React,{useState} from 'react';
+import Button from 'react-bootstrap/Button'
+import {ActualizarPresentacion, ClienParticular} from '../../Components'
 
 
 
-const SeccionPropiedadAdmin = () => {
+
+function SeccionPropiedadAdmin  (){
+    const [actpresen, setActpresen] = useState(false);
+    function _onButtonClick() {
+    if (actpresen) {
+        setActpresen(false);
+    } else {
+        setActpresen(true);
+    }}
+
     return (
         <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
@@ -13,15 +24,19 @@ const SeccionPropiedadAdmin = () => {
                     <div class="col-md-6">
                         <div class="small mb-1">ID-Propiedad: NCF-420</div>
                         <h1 class="display-5 fw-bolder">Hermoso Departamento Chascomus</h1>
-                        <div class="fs-5 mb-5">
+                        <div class="fs-5 mb-3">
                             <span>French 69</span>
                         </div>
                         <p class="lead">Moderno apartamento a estrenar a pasos de Punta Shopping y 700 metros del mar. Cuenta con living-comedor con cocina integrada, dos dormitorios, uno en suite y dos baños completos, terraza y garaje. Edificio con muy buenos servicios. Precio mas gastos de ocupación.</p>
-                        <div class="d-flex">
-                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                                Editar documentación
+                        {/* <div class="d-flex">
+                            <button onClick={()=>_onButtonClick()} class="btn btn-outline-dark flex-shrink-0" type="button">
+                                Editar galeria
                             </button>
-                        </div>
+                            <Button onClick={()=>_onButtonClick()} variant="primary">Editar galeria</Button>
+                            {actpresen ? <actualizarPresentacion/> :null}
+                        </div> */}
+                        <Button onClick={()=>_onButtonClick()} variant="primary">Editar galeria</Button>
+                            {actpresen ? <ActualizarPresentacion /> :null}
                     </div>
                 </div>
             </div>

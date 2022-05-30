@@ -1,11 +1,12 @@
 import React from 'react'
-import { SingUp,Header,HeaderIniciarSesion,FooterGeneral,BotonesCambiarVistas} from '../../Components'
+import { SingUp,BannerIniciarSesion,ComponenteHeader,FooterGeneral,BotonesCambiarVistas} from '../../Components'
 import Container from 'react-bootstrap/Container'
 const IniciarSesion = () => {
+    const estado = "ClienteSI"
     return (
         <div>
-            <Header />
-            <HeaderIniciarSesion />
+            <ComponenteHeader estadoPantalla={estado}/>
+            <BannerIniciarSesion />
             <SingUp className="fondo"/>
             <BotonesCambiarVistas/>
             <FooterGeneral/>

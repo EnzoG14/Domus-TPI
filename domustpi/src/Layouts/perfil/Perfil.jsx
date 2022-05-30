@@ -1,9 +1,9 @@
 import React from 'react'
-import { Header,BannerPerfil,FooterGeneral} from '../../Components'
+import { HeaderClienteIniciado,BannerPerfil,FooterGeneral} from '../../Components'
 const Perfil = () => {
     return (
         <>
-            <Header />
+            <HeaderClienteIniciado />
             <BannerPerfil />
             <FooterGeneral />
         </>

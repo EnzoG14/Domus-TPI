@@ -1,5 +1,5 @@
 import React from 'react'
-import {HeaderAgentesInmobiliarios,PropMod, FooterGeneral} from '../../Components';
+import {HeaderAgentesInmobiliarios,PropModAgenteInm, FooterGeneral,BotonNuevaPropiedad} from '../../Components';
 // import HeaderCatalogo from './Components/HeaderCatalogo.jsx';
 // import Propiedad from './Components/Propiedad.jsx';
 
@@ -42,10 +42,12 @@ function CatalogoAgentesInmobiliarios() {
     return (
     <div>
       <HeaderAgentesInmobiliarios/>
+      <BotonNuevaPropiedad/>
+
       <div className="col-12 p-5 row gap-4 justify-content-center">
         {propMods.map(propMod=>(
                   
-                  <PropMod direccion={propMod.direccion} precio={propMod.precio} descripcion={propMod.descripcion} imagen={propMod.imagen}/>
+                  <PropModAgenteInm direccion={propMod.direccion} precio={propMod.precio} descripcion={propMod.descripcion} imagen={propMod.imagen}/>
 
                 ))}
       </div>

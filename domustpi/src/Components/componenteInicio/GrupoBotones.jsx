@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import {ButtonGroup, ToggleButton,} from 'react-bootstrap';
 import './GrupoBotones.css'
 
+
 function GrupoBotones() {
     const [checked, setChecked] = useState(false);
     const [radioValue, setRadioValue] = useState('1');
@@ -15,23 +16,23 @@ function GrupoBotones() {
     return (
       <>
         <ButtonGroup>
-          {radios.map((radio, idx) => (
-            <ToggleButton
-              key={idx}
-              id={`radio-${idx}`}
-              type="radio"
-              variant={'botonDefault'}
-              name="radio"
-              value={radio.value}
-              checked={radioValue === radio.value}
-              onChange={(e) => setRadioValue(e.currentTarget.value)}
-            >
-              {radio.name}
-            </ToggleButton>
-          ))}
-        </ButtonGroup>
+        {radios.map((radio, idx) => (
+          <ToggleButton
+            key={idx}
+            id={`radio-${idx}`}
+            type="radio"
+            variant={'especial'}
+            name="radio"
+            value={radio.value}
+            checked={radioValue === radio.value}
+            onChange={(e) => setRadioValue(e.currentTarget.value)}
+          >
+            {radio.name}
+          </ToggleButton>
+        ))}
+      </ButtonGroup>
       </>
     );
   }
-  
-  export default GrupoBotones
+
+export default GrupoBotones

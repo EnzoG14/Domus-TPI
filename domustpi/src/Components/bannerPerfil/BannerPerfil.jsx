@@ -42,9 +42,9 @@ const BannerPerfil = () => {
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><BsBuilding/></div>
                         <h2 class="h4 fw-bolder">Propiedades adquiridas</h2>
                         <br />
-                        <p><b>Propiedad: NCF-420</b> French 69</p>
-                        <p><b>Propiedad: NCF-421</b> Tutuca 4</p>
-                        <p><b>Propiedad: NCF-422</b> God 777</p>
+                        <p><b>Propiedad: COD-456</b> French 1531</p>
+                        <p><b>Propiedad: COD-582</b> Sarmiento 2142</p>
+                        <p><b>Propiedad: COD-422</b> Paraguay 734</p>
                         <a class="text-decoration-none" href="/administrarPropiedades">
                             Administrar propiedades
                             <BsArrowRight/>

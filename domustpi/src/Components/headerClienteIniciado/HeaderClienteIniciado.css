@@ -1,0 +1,40 @@
+.logo{
+    margin-left: 0rem;
+    border-radius: 10px;
+    margin-left:10px;
+    height: 60px;
+    width: 60px;
+}
+.wrapLogo{
+    margin-left: 20px;
+}
+.navBar{
+    padding: 10px;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: rgba(178, 209, 255, 1);
+    justify-content: space-between;
+    
+}
+
+.color-nav{
+    background-color: rgba(178, 209, 255, 1);
+    border-top-width: 8rem !important;
+    border-top-color: rgb(0, 102, 255) !important;
+}
+
+.end-0{
+    margin-right: 8rem;
+    position: sticky-right;
+}
+
+
+.start-0{
+    margin-left:8rem;}
+
+.wrapInicio{
+   display: flex;
+    justify-content: flex-end;
+}    
+

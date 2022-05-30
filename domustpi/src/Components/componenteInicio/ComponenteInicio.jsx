@@ -7,11 +7,11 @@ const ComponenteInicio = () => {
     return (
       <Card className="text-white fondo">
          <Card.Img className='imgInicio' src={require('./src/fondoo.png')} alt="edificios" />
-         <Card.ImgOverlay>  
+         <Card.ImgOverlay className='wrapComponenteInicio'>  
            {/* Arreglar imagen y agregar propiedades destacadas */}
-           <Container className='color-nav1'>
+           <div className='color-nav1'>
             <Card.Title class="wrapTitulo">Encontrá tu Lugar</Card.Title>
-              <Stack direction="horizontal" gap={3}>
+              <Stack direction="horizontal" className='wrapBotones1'>
                   <GrupoBotones></GrupoBotones>
               </Stack>
               <Stack direction="horizontal" gap={3}>
@@ -28,9 +28,9 @@ const ComponenteInicio = () => {
                     className="me-2"
                     aria-label="Ubicacion"
                   />
-                  <Button variant="primary">Buscar</Button></Form>
+                  <Button variant={"Buscar"}>Buscar</Button></Form>
               </Stack>
-           </Container>
+           </div>
          </Card.ImgOverlay>
       </Card>
   );

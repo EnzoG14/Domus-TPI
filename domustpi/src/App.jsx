@@ -3,7 +3,10 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom'
 import {Inicio,Catalogo,IniciarSesion,Perfil,AdministrarPropiedades,
   VentaPropiedad,SecretariaDC,QuienesSomos,Clientes,ModificarCatalogo,
-  Transacciones,Usuarios,Solicitudes,CalendarioAgentesInmobiliarios, CatalogoAgentesInmobiliarios} from  './Layouts'
+  Transacciones,Usuarios,Solicitudes,CalendarioAgentesInmobiliarios,
+  CatalogoAgentesInmobiliarios, InformacionPropiedad, CatalogoEmpMarketing, ActualizarPropiedades,
+  VisualizarPropiedadesAgentesInmobiliarios,InicioAutenticado,CatalogoAutenticado, 
+  CajasCajera,EntSalCajera,TransaccionesCajera, PerfilAgenteInm} from  './Layouts'
 
 
 function App() {
@@ -26,6 +29,16 @@ function App() {
         <Route exact path="/solicitudes" element={<Solicitudes/>} />
         <Route exact path="/calendarioAgenteInmobiliario" element={<CalendarioAgentesInmobiliarios/>} />
         <Route exact path="/catalogoAgenteInmobiliario" element={<CatalogoAgentesInmobiliarios/>} />
+        <Route exact path="/informacionPropiedad" element={<InformacionPropiedad/>} />
+        <Route exact path="/catalogoEmpMarketing" element={<CatalogoEmpMarketing/>} />
+        <Route exact path="/actualizarPropiedades" element={<ActualizarPropiedades/>} />
+        <Route exact path="/VisualizarPropiedadesAgentesInmobiliarios" element={<VisualizarPropiedadesAgentesInmobiliarios/>} />
+        <Route exact path="/inicioAutenticado" element={<InicioAutenticado/>}/>
+        <Route exact path="/catalogoAutenticado" element={<CatalogoAutenticado/>}/>
+        <Route exact path="/cajasCajera" element={<CajasCajera/>} />
+        <Route exact path="/entSalCajera" element={<EntSalCajera/>} />
+        <Route exact path="/transaccionesCajera" element={<TransaccionesCajera/>} />
+        <Route exact path="/perfilAgenteInm" element={<PerfilAgenteInm/>}/>
       </Routes>
       </div>
     );

@@ -1,9 +1,9 @@
 import React from 'react';
-import './HeaderIniciarSesion.css';
+import './BannerIniciarSesion.css';
 import {Nav} from 'react-bootstrap';
 
 
-const HeaderIniciarSesion = () => {
+const BannerIniciarSesion = () => {
     return (
  
 <Nav>
@@ -13,4 +13,4 @@ const HeaderIniciarSesion = () => {
 
     )}
 
-export default HeaderIniciarSesion;
+export default BannerIniciarSesion;

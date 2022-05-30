@@ -1,3 +1,18 @@
-.botonDefault{
+.btn-especial {
+    background-color: #f9f9f9 !important;
+    box-shadow: 0 2px 3px 0 rgb(42 42 42 / 5%) !important;
+    color: #7e7e7e !important;
+    border-radius: 4px !important;
+    margin-right: 11px !important;
+    margin-left: 4px !important;
+    width: 14rem !important;
+    font-family: Poppins,sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    outline: none;
+  }
 
-}
+  .btn-check:active+.btn-especial, .btn-check:checked+.btn-especial, .btn-especial.active, .btn-especial.dropdown-toggle.show, .btn-especial:active{
+    color: #fff !important;
+    background-color: #0d6efd !important;
+  }

@@ -2,15 +2,32 @@
     display: flex;
     justify-content: center;
     padding: 24px;
-    font-size: xx-large;
+    font-size: xxx-large;
     font-weight: 600;
 }
 
+.btn-Buscar {
+    color: #fff !important;
+    background-color: #0d6efd !important;
+    box-shadow: 0 2px 3px 0 rgb(42 42 42 / 5%) !important;
+    border-radius: 4px !important;
+    margin-right: 8px !important;
+    width: 100%;
+    font-family: Poppins,sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    outline: none;
+  }
+
 .color-nav1{
     background-color: rgba(0, 0, 0, 0.233);
-    padding: 24px;
+    padding-top: 3%;
+    padding-left: 20%;
+    padding-right: 20%;
     margin-top: auto;
     margin-bottom: auto;
+    height: 100%;
+    width: 100%;
 }
 
 .fondo{
@@ -25,8 +42,12 @@
     
 }
 
-.wrapComponente{
-    margin-left: 0%;
-    margin-right: 0%;
+.wrapComponenteInicio{
+    padding: 0% !important;
 }
 
+.wrapBotones1{
+    display: flex;
+    justify-content: center;
+    padding: 1% !important;
+}

@@ -1,10 +1,10 @@
 import React from 'react'
-import {Header,SeccionPropiedadAdmin,FooterGeneral} from '../../Components'
+import {HeaderClienteIniciado,SeccionPropiedadAdmin,FooterGeneral} from '../../Components'
 
 const AdministrarPropiedades = () => {
     return (
         <>
-            <Header />
+            <HeaderClienteIniciado />
             <SeccionPropiedadAdmin/>
             <SeccionPropiedadAdmin/>
             <SeccionPropiedadAdmin/>

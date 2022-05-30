@@ -70,8 +70,6 @@ export default function FuncionCal({
 
   const [myEvents, setEvents] = useState(events)
 
-
-  
   const handleSelectSlot = useCallback(
     ({ start, end }) => {
       const title = window.prompt('Agregar Nuevo Evento')
@@ -91,6 +89,30 @@ export default function FuncionCal({
     () => ({
       defaultDate: new Date(moment()),
       scrollToTime: new Date(1970, 1, 1, 6),
+    }),
+    []
+  )
+
+  const eventPropGetter = useCallback(
+    (event, start, end, isSelected) => ({
+      ...(event.title.includes('Agente #01') && {
+        style: {
+          backgroundColor: '#F8E480',
+          color: 'black'
+        },
+      }),
+      ...(event.title.includes('Agente #02') && {
+        style: {
+          backgroundColor: '#80E9F8',
+          color: 'black'
+        },
+      }),
+      ...(event.title.includes('Agente #03') && {
+        style: {
+          backgroundColor: '#F880B2',
+          color: 'black'
+        },
+      }),
     }),
     []
   )
@@ -116,6 +138,7 @@ export default function FuncionCal({
           onSelectSlot={handleSelectSlot}
           selectable
           scrollToTime={scrollToTime}
+          eventPropGetter={eventPropGetter}
         />
       </div>
     </Fragment>
