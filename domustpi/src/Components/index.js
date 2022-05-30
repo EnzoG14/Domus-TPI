@@ -46,5 +46,4 @@ export {default as PropiedadesAgentes} from './propiedadesAgentes/PropiedadesAge
 export {default as PropModAgenteInm} from './propModAgenteInm/PropModAgenteInm'
 export {default as InfoPropietario} from './InfoPropietario/InfoPropietario'
 export {default as BannerPerfilUsuarios} from './bannerPerfilUsuarios/BannerPerfilUsuarios'
-export {default as EditarImagen} from './editarImagen/EditarImagen'
 export {default as EditarPropiedadesMarketing} from './editarPropiedadesMarketing/EditarPropiedadesMarketing'
