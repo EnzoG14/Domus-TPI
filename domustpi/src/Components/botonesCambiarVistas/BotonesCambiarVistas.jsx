@@ -15,7 +15,7 @@ const BotonesCambiarVistas = () => {
             Cajera
             </Button>
             <Button variant="secondary" size="lg">
-            Imprimir balance
+            Jefa Administración
             </Button>
             <Button variant="secondary" size="lg">
             Imprimir balance

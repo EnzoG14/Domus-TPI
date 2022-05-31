@@ -1,0 +1,48 @@
+import React from 'react';
+import './ComponenteReportes.css';
+import Table from 'react-bootstrap/Table';
+import Button from 'react-bootstrap/Button';
+import Stack from 'react-bootstrap/Stack';
+import Container from 'react-bootstrap/Container';
+const ComponenteReportesVentas = () => {
+    const ReportesVentas=['a','a','a','a','a','a','a','a','a','a','a']
+    return (
+    <Container>
+    <Table striped bordered hover>
+    <thead>
+        <tr>
+        <th>Nro Inmueble</th>
+        <th>Localidad</th>
+        <th>Dirección</th>
+        <th>Propietario</th>
+        <th>Comprador</th>
+        <th>Agente</th>
+        <th>Fecha</th>
+        <th>Forma de pago</th>
+        <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+    {ReportesVentas.map(ReporteVentas=>(
+              
+                    
+            <tr>
+            <td>421</td>
+            <td>Corrientes</td>
+            <td>Moreno 523</td>
+            <td>Carlos Lopez</td>
+            <td>Juan Gonzalez</td>
+            <td>Diego Gomez</td>
+            <td>23/04/2022</td>
+            <td>Efectivo</td>
+            <td>$4.000.000,00</td>
+            </tr>
+            ))}
+    </tbody> 
+
+    </Table>
+    </Container>
+  );
+}
+
+export default ComponenteReportesVentas;

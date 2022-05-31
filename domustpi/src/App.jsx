@@ -6,7 +6,7 @@ import {Inicio,Catalogo,IniciarSesion,Perfil,AdministrarPropiedades,
   Transacciones,Usuarios,Solicitudes,CalendarioAgentesInmobiliarios,
   CatalogoAgentesInmobiliarios, InformacionPropiedad, CatalogoEmpMarketing, ActualizarPropiedades,
   VisualizarPropiedadesAgentesInmobiliarios,InicioAutenticado,CatalogoAutenticado, 
-  CajasCajera,EntSalCajera,TransaccionesCajera, PerfilAgenteInm, PerfilCajera, VisualizarPropiedadEmpMarketing} from  './Layouts'
+  CajasCajera,EntSalCajera,TransaccionesCajera, PerfilAgenteInm, PerfilCajera, VisualizarPropiedadEmpMarketing, Reportes} from  './Layouts'
 
 
 function App() {
@@ -41,6 +41,7 @@ function App() {
         <Route exact path="/transaccionesCajera" element={<TransaccionesCajera/>} />
         <Route exact path="/perfilAgenteInm" element={<PerfilAgenteInm/>}/>
         <Route exact path="/perfilCajera" element={<PerfilCajera/>}/>
+        <Route exact path="/reportes" element={<Reportes/>}/>
       </Routes>
       </div>
     );

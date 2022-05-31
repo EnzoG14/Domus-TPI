@@ -1,5 +1,6 @@
 import React from 'react';
 import './HeaderJefaAdmin.css';
+import {BsFillPersonFill} from "react-icons/bs"
 import {Navbar, Nav, Container, Button} from 'react-bootstrap';
 
 const HeaderJefaAdmin = () => {
@@ -11,13 +12,13 @@ const HeaderJefaAdmin = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav end-0">
           <Nav className="me-auto">
-            <Nav.Link href="/">Inicio</Nav.Link>
-            <Nav.Link href="/catalogo">Propiedades</Nav.Link>
-            <Nav.Link href="/quienessomos">Quienes somos</Nav.Link>
-            <Nav.Link href="/secretariaDC">Cambiar vista</Nav.Link>
+            <Nav.Link href="/">Transacciones</Nav.Link>
+            <Nav.Link href="/catalogo">Clientes</Nav.Link>
+            <Nav.Link href="/reportes">Reportes</Nav.Link>
           </Nav>
           <Nav className="wrapInicio">
-          <Button className="btn-customize top-1 end-0" href="/iniciarsesion">Iniciar Sesion</Button>
+          <Button className="btn-customize top-1 end-0" href="/perfilJefaAdmin"> 
+          <BsFillPersonFill size="1.5rem"/> Jefa Administración</Button>
           </Nav>
         </Navbar.Collapse>
   </Navbar>

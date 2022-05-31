@@ -21,7 +21,7 @@ const ComponenteInicio = () => {
                         <option>Oficina Comercial</option>
                         <option>Local Comercial</option>
                 </Form.Select>
-                <Form className="d-flex">
+                <Form className="d-flex CajaUbicacion">
                   <FormControl
                     type="search"
                     placeholder="Ubicacion"

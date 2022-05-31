@@ -25,3 +25,4 @@ export {default as TransaccionesCajera} from './transaccionesCajera/Transaccione
 export {default as PerfilAgenteInm} from './perfilAgenteInm/PerfilAgenteInm'
 export {default as PerfilCajera} from './perfilCajera/PerfilCajera'
 export {default as VisualizarPropiedadEmpMarketing} from './visualizarPropiedadEmpMarketing/VisualizarPropiedadEmpMarketing'
+export {default as Reportes} from './reportes/Reportes'

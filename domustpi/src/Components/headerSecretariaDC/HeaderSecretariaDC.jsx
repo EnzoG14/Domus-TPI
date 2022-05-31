@@ -17,6 +17,7 @@ const HeaderSecretariaDC = () => {
         <Nav.Link href="/modificarCatalogo">Catalogo</Nav.Link>
         <Nav.Link href="/transacciones">Transacciones</Nav.Link>
         <Nav.Link href="/usuarios">Usuarios</Nav.Link>
+        <Nav.Link href="/reportes">Reportes</Nav.Link>
         <Nav.Link href="/catalogo">Cambiar vista</Nav.Link>
         <Button className="btn-customize position-absolute top-1 end-0" href="/solicitudes">Solicitudes</Button>
       </Nav>
