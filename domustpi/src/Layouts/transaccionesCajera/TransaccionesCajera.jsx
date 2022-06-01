@@ -1,18 +1,14 @@
 import React from 'react'
-import { HeaderCajera, Paginacion, EncabezadoTransaccion, ComponenteTransaccion, RangoFecha, FooterGeneral} from '../../Components'
+import { HeaderCajera, Paginacion, EncabezadoTransaccion, FooterGeneral} from '../../Components'
 import Container from 'react-bootstrap/Container'
 
 const TransaccionesCajera = () => {
     return (
         <>
-            <HeaderCajera />
+        <HeaderCajera />
         <Container>
-            <h2>Transacciones</h2> 
-            <RangoFecha />
-            <div>
-                <EncabezadoTransaccion />
-            </div>
-            <Paginacion />
+        <EncabezadoTransaccion />
+        <Paginacion />
         </Container>
         <FooterGeneral/>
         </>

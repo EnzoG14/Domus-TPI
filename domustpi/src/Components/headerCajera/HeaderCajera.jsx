@@ -1,7 +1,7 @@
 import React from 'react';
 import './HeaderCajera.css';
 import {BsFillPersonFill} from "react-icons/bs"
-import {Navbar, Nav, Button} from 'react-bootstrap';
+import {Navbar, Nav, Button, Dropdown} from 'react-bootstrap';
 
 const HeaderCajera = () => {
     return (
@@ -17,8 +17,16 @@ const HeaderCajera = () => {
             <Nav.Link href="/transaccionesCajera">Transacciones</Nav.Link>
           </Nav>
           <Nav className="wrapInicio">
-          <Button className="btn-customize top-1 end-0" href="/perfilCajera">
-          <BsFillPersonFill size="1.5rem"/> Cajera</Button>
+          <Dropdown className="btn-customize top-1 end-0">
+          <Dropdown.Toggle className="btn-customize" id="dropdown-menu-align-responsive-1" >
+          <BsFillPersonFill size="1.5rem"/> Cajera {'\u00A0'}   
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu align={{ lg: 'end' }}>
+            <Dropdown.Item href="/perfilCajera">Perfil</Dropdown.Item>
+            <Dropdown.Item href="/">Cerrar Sesion</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
           </Nav>
         </Navbar.Collapse>
   </Navbar>

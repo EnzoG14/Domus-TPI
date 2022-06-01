@@ -177,7 +177,7 @@ const NuevaPropiedad = () => {
             </Form.Group>
             <Form.Group as={Row} className="mb-3">
                 <Col sm={{ span: 10, offset: 2 }}>
-                <Button type="submit">Confirmar Registro</Button>
+                <Button className="btn-customize" type="submit">Confirmar Registro</Button>
                 </Col>
             </Form.Group>
         </Form>

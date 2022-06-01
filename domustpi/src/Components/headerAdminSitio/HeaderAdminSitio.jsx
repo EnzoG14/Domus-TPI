@@ -1,6 +1,7 @@
 import React from 'react';
 import './HeaderAdminSitio.css';
-import {Navbar, Nav, Container, Button} from 'react-bootstrap';
+import {Navbar, Nav, Dropdown} from 'react-bootstrap';
+import {BsFillPersonFill} from "react-icons/bs"
 
 const HeaderAdminSitio = () => {
     return (
@@ -17,7 +18,16 @@ const HeaderAdminSitio = () => {
             <Nav.Link href="/secretariaDC">Cambiar vista</Nav.Link>
           </Nav>
           <Nav className="wrapInicio">
-          <Button className="btn-customize top-1 end-0" href="/iniciarsesion">Iniciar Sesion</Button>
+          <Dropdown className="btn-customize top-1 end-0">
+          <Dropdown.Toggle className="btn-customize" id="dropdown-menu-align-responsive-1" >
+          <BsFillPersonFill size="1.5rem"/> Administrador {'\u00A0'}   
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu align={{ lg: 'end' }}>
+            <Dropdown.Item href="/perfilAdmin">Perfil</Dropdown.Item>
+            <Dropdown.Item href="/">Cerrar Sesion</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
           </Nav>
         </Navbar.Collapse>
   </Navbar>

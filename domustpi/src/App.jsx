@@ -6,7 +6,9 @@ import {Inicio,Catalogo,IniciarSesion,Perfil,AdministrarPropiedades,
   Transacciones,Usuarios,Solicitudes,CalendarioAgentesInmobiliarios,
   CatalogoAgentesInmobiliarios, InformacionPropiedad, CatalogoEmpMarketing, ActualizarPropiedades,
   VisualizarPropiedadesAgentesInmobiliarios,InicioAutenticado,CatalogoAutenticado, 
-  CajasCajera,EntSalCajera,TransaccionesCajera, PerfilAgenteInm, PerfilCajera, VisualizarPropiedadEmpMarketing, Reportes} from  './Layouts'
+  CajasCajera,EntSalCajera,TransaccionesCajera, PerfilAgenteInm, PerfilCajera, VisualizarPropiedadEmpMarketing, Reportes
+  ,PerfilJefaAdmin,ClientesJefaAdmin,TransaccionesJefaAdmin, PerfilSecretaria, ReportesJefaComer, 
+  CalendarioJefaComer, CatalogoJefaComer, PerfilEmpMarketing, ClientesJefaComer, PerfilJefaComer} from  './Layouts'
 
 
 function App() {
@@ -41,8 +43,17 @@ function App() {
         <Route exact path="/transaccionesCajera" element={<TransaccionesCajera/>} />
         <Route exact path="/perfilAgenteInm" element={<PerfilAgenteInm/>}/>
         <Route exact path="/perfilCajera" element={<PerfilCajera/>}/>
-        <Route exact path="/reportes" element={<Reportes/>}/>
-      </Routes>
+        <Route exact path="/perfilJefaAdmin" element={<PerfilJefaAdmin/>} />
+        <Route exact path="/clientesJefaAdmin" element={<ClientesJefaAdmin/>} />
+        <Route exact path="/transaccionesJefaAdmin" element={<TransaccionesJefaAdmin/>} />
+        <Route exact path="/perfilSecretaria" element={<PerfilSecretaria/>} />
+        <Route exact path="/reportesJefaComer" element={<ReportesJefaComer/>} />
+        <Route exact path="/calendarioJefaComer" element={<CalendarioJefaComer/>} />
+        <Route exact path="/clientesJefaComer" element={<ClientesJefaComer/>} />
+        <Route exact path="/catalogoJefaComer" element={<CatalogoJefaComer/>} />
+        <Route exact path="/perfilEmpMarketing" element={<PerfilEmpMarketing/>} />
+        <Route exact path="/perfilJefaComer" element={<PerfilJefaComer/>} />
+              </Routes>
       </div>
     );
 }

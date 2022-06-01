@@ -17,7 +17,7 @@ const actualizarPresentacion = () => {
           </Form.Group>
             <Form.Group as={Row} className="mb-3">
                 <Col sm={{ span: 10, offset: 2 }}>
-                <Button type="submit">Confirmar Cambio</Button>
+                <Button type="submit" className="btn-customize">Confirmar Cambio</Button>
                 </Col>
             </Form.Group>
         </Form>

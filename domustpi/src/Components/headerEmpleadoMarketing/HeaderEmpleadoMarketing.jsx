@@ -1,7 +1,7 @@
 import React from 'react';
 import './HeaderEmpleadoMarketing.css';
 import {BsFillPersonFill} from "react-icons/bs"
-import {Navbar, Nav, Container, Button} from 'react-bootstrap';
+import {Navbar, Nav, Container, Button, Dropdown} from 'react-bootstrap';
 
 const HeaderEmpleadoMarketing = () => {
     return (
@@ -15,8 +15,16 @@ const HeaderEmpleadoMarketing = () => {
             <Nav.Link href="/catalogoEmpMarketing">Catalogo</Nav.Link>
           </Nav>
           <Nav className="wrapInicio">
-          <Button className="btn-customize top-1 end-0" href="/perfilEmpMarketing">
-          <BsFillPersonFill size="1.5rem"/> Emp. Marketing</Button>
+          <Dropdown className="btn-customize top-1 end-0">
+          <Dropdown.Toggle className="btn-customize" id="dropdown-menu-align-responsive-1" >
+          <BsFillPersonFill size="1.5rem"/> Emp Marking {'\u00A0'}   
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu align={{ lg: 'end' }}>
+            <Dropdown.Item href="/perfilEmpMarketing">Perfil</Dropdown.Item>
+            <Dropdown.Item href="/iniciarsesion">Cerrar Sesion</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
           </Nav>
         </Navbar.Collapse>
   </Navbar>

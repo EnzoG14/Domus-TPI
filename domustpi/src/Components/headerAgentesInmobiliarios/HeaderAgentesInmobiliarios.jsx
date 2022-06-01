@@ -1,7 +1,7 @@
 import React from 'react';
 import './HeaderAgenteInmobiliarios.css';
 import {BsFillPersonFill} from "react-icons/bs"
-import {Navbar, Nav, Button} from 'react-bootstrap';
+import {Navbar, Nav, Dropdown} from 'react-bootstrap';
 
 const HeaderAgentesInmobiliarios = () => {
     return (
@@ -16,8 +16,16 @@ const HeaderAgentesInmobiliarios = () => {
             <Nav.Link href="/calendarioAgenteInmobiliario">Agenda</Nav.Link>
           </Nav>
           <Nav className="wrapInicio">
-          <Button className="btn-customize top-1 end-0" href="/PerfilAgenteInm">
-            <BsFillPersonFill size="1.5rem"/> Agente Inmobiliario</Button>
+          <Dropdown className="btn-customize top-1 end-0">
+          <Dropdown.Toggle className="btn-customize" id="dropdown-menu-align-responsive-1" >
+          <BsFillPersonFill size="1.5rem"/> Agente Inmobiliario {'\u00A0'}   
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu align={{ lg: 'end' }}>
+            <Dropdown.Item href="/PerfilAgenteInm">Perfil</Dropdown.Item>
+            <Dropdown.Item href="/">Cerrar Sesion</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
           </Nav>
         </Navbar.Collapse>
   </Navbar>

@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import {InfoPropietario} from '../../Components'
 import './PropiedadesAgentes.css';
-import {Button} from 'react-bootstrap';
+import {Button, Carousel} from 'react-bootstrap';
 
 
 
@@ -41,6 +41,36 @@ function PropiedadesAgentes  ()  {
                             Informacion Propietario
                         </Button>
                         {boton ? <InfoPropietario/>:null}
+                        <Carousel variant="dark" className="mt-3 mx-4">
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-75 mx-auto"
+                            src="https://definicion.de/wp-content/uploads/2011/01/casa-1.jpg"
+                            alt="First slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-75 mx-auto"
+                            src="https://casasparaconstruir.com/projetos/140/01.jpg"
+                            alt="Second slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-75 mx-auto"
+                            src="https://images.adsttc.com/media/images/622b/9c0b/6a2b/af01/6506/d38b/newsletter/004-ok.jpg?1647025197'"
+                            alt="Third slide"
+                            />
+
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
                 </div>
             </div>
         </section>

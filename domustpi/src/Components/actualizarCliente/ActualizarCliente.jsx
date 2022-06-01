@@ -4,7 +4,7 @@ import {Row, Col, Button} from 'react-bootstrap';
 
 const ActualizarCliente = () => {
     return (
-        <Form>
+        <Form className="mt-3">
             <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
                 <Form.Label column sm={2}>
                 Apellido/s
@@ -23,7 +23,7 @@ const ActualizarCliente = () => {
             </Form.Group>
             <Form.Group as={Row} className="mb-3">
                 <Col sm={{ span: 10, offset: 2 }}>
-                <Button type="submit">Buscar</Button>
+                <Button type="submit" className="btn-customize btn">Buscar</Button>
                 </Col>
             </Form.Group>
         </Form>

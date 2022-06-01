@@ -44,7 +44,7 @@ function CatalogoAgentesInmobiliarios() {
       <HeaderAgentesInmobiliarios/>
       <BotonNuevaPropiedad/>
 
-      <div className="col-12 p-5 row gap-4 justify-content-center">
+      <div className="mx-auto col-12 px-5 row gap-4 justify-content-center">
         {propMods.map(propMod=>(
                   
                   <PropModAgenteInm direccion={propMod.direccion} precio={propMod.precio} descripcion={propMod.descripcion} imagen={propMod.imagen}/>

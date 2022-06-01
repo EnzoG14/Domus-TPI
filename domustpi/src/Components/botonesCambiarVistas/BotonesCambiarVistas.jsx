@@ -14,11 +14,11 @@ const BotonesCambiarVistas = () => {
             <Button variant="secondary" size="lg" href="/transaccionesCajera">
             Cajera
             </Button>
-            <Button variant="secondary" size="lg">
-            Jefa Administración
+            <Button variant="secondary" size="lg" href="/clientesJefaAdmin">
+            Jefa de Administración
             </Button>
-            <Button variant="secondary" size="lg">
-            Imprimir balance
+            <Button variant="secondary" size="lg" href="/reportesJefaComer">
+            Jefa de Comercialización
             </Button>
             <Button variant="secondary" size="lg">
             Imprimir balance

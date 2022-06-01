@@ -1,21 +1,43 @@
 import React,{useState} from 'react';
-import {InfoPropietario} from '../../Components'
+import {InfoPropietario, ActualizarPresentacion} from '../../Components'
 import './EditarPropiedadesMarketing.css';
 import {Button} from 'react-bootstrap';
+import Link from 'react-router-dom';
+import Carousel from 'react-bootstrap/Carousel';
 
 
 
 
-function EditarPropiedadesMarketing  ()  {
+class EditarPropiedadesMarketing extends React.Component{
 
-    const [boton , setBoton] = useState(false);
-    function Show() {
-        if (boton) {
-            setBoton(false);
+    constructor(props) {
+        super(props);
+        this.state = {
+            showComponent1: false,
+            showComponent2: false
+        };
+        this._onButtonClick = this._onButtonClick.bind(this);
+        this._onButtonClick2 = this._onButtonClick2.bind(this)
+      }
+
+    _onButtonClick2() {
+        if (this.state.showComponent2) {
+            this.setState({showComponent2: false,});
         } else {
-            setBoton(true);
-        }
-    }
+            this.setState({showComponent2: true,
+                        showComponent1: false,});
+        }}
+  
+  
+  _onButtonClick() {
+        if (this.state.showComponent1) {
+        this.setState({showComponent1: false});
+        } else {
+            this.setState({showComponent1: true,
+                showComponent2: false,});
+    }}
+    
+render(){
 
     return (
         <section class="py-5">
@@ -37,17 +59,47 @@ function EditarPropiedadesMarketing  ()  {
                         <p>Antiguedad: 2 años</p>
                         <p>Opciones de contrato: Alquiler</p>
                     </div>
-                    <Button onClick={Show} className="btn-customize mt-3 mx-4" variant="primary" >
-                            Informacion Propietario
-                        </Button>
-                        {boton ? <InfoPropietario/>:null}
-                    {/* boton de dos opciones desplegable */}
-                    {/* <Button onClick={()=>_onButtonClick()} variant="primary">Editar galeria</Button>
-                            {actpresen ? <ActualizarPresentacion /> :null} */}
+                    <Button onClick={this._onButtonClick} className="btn-customize mt-3 mx-4" variant="primary" >Informacion Propietario</Button>
+                    {this.state.showComponent1 ? <InfoPropietario /> :null}
+                    <Button onClick={this._onButtonClick2} className="btn-customize mt-3 mx-4" variant="primary" >Editar Galeria</Button>
+                    {this.state.showComponent2 ? <ActualizarPresentacion /> :null}
+                    <Carousel variant="dark" className="mt-3 mx-4">
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-75 mx-auto"
+                            src="https://definicion.de/wp-content/uploads/2011/01/casa-1.jpg"
+                            alt="First slide"
+                            />
+                            <Carousel.Caption>
+                            <Button className="btn x-4" variant="danger">Eliminar Imagen</Button>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-75 mx-auto"
+                            src="https://casasparaconstruir.com/projetos/140/01.jpg"
+                            alt="Second slide"
+                            />
+                            <Carousel.Caption>
+                            <Button className="btn mx-4" variant="danger">Eliminar Imagen</Button>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-75 mx-auto"
+                            src="https://images.adsttc.com/media/images/622b/9c0b/6a2b/af01/6506/d38b/newsletter/004-ok.jpg?1647025197'"
+                            alt="Third slide"
+                            />
+
+                            <Carousel.Caption>
+                            <Button className="mx-4 btn" variant="danger">Eliminar Imagen</Button>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
                 </div>
             </div>
         </section>
   );
-}
+}}
 
 export default EditarPropiedadesMarketing;

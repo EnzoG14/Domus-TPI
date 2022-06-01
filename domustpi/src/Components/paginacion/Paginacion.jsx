@@ -4,8 +4,8 @@ import Pagination from 'react-bootstrap/Pagination'
 
 const Paginacion = () => {
     return (
-      <div style={{ display: "flex", justifyContent: "center"}}>
-        <><Pagination className = "Pagin mx-auto">
+        <>
+        <Pagination className = "Pagin my-3 mx-auto justify-content-center">
           <Pagination.First />
           <Pagination.Prev />
           <Pagination.Item>{1}</Pagination.Item>
@@ -21,8 +21,8 @@ const Paginacion = () => {
           <Pagination.Item>{11}</Pagination.Item>
           <Pagination.Next />
           <Pagination.Last />
-        </Pagination></>
-      </div>
+        </Pagination>
+        </>
   );
 }
 

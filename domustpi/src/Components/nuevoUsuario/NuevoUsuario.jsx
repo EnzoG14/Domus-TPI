@@ -72,7 +72,7 @@ const nuevoUsuario = () => {
             </Form.Group>
             <Form.Group as={Row} className="mb-3">
                 <Col sm={{ span: 10, offset: 2 }}>
-                <Button type="submit">Confirmar Registro</Button>
+                <Button type="submit" className="btn-customize">Confirmar Registro</Button>
                 </Col>
             </Form.Group>
         </Form>

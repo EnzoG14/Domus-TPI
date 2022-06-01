@@ -1,6 +1,8 @@
 import React from 'react';
 import './HeaderGerenteGral.css';
-import {Navbar, Nav, Container, Button} from 'react-bootstrap';
+import {Navbar, Nav, Dropdown} from 'react-bootstrap';
+import {BsFillPersonFill} from "react-icons/bs"
+
 
 const HeaderGerenteGral = () => {
     return (
@@ -17,7 +19,16 @@ const HeaderGerenteGral = () => {
             <Nav.Link href="/secretariaDC">Cambiar vista</Nav.Link>
           </Nav>
           <Nav className="wrapInicio">
-          <Button className="btn-customize top-1 end-0" href="/iniciarsesion">Iniciar Sesion</Button>
+          <Dropdown className="btn-customize top-1 end-0">
+          <Dropdown.Toggle className="btn-customize" id="dropdown-menu-align-responsive-1" >
+          <BsFillPersonFill size="1.5rem"/> Gerente {'\u00A0'}   
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu align={{ lg: 'end' }}>
+            <Dropdown.Item href="/perfilGerenteGral">Perfil</Dropdown.Item>
+            <Dropdown.Item href="/">Cerrar Sesion</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
           </Nav>
         </Navbar.Collapse>
   </Navbar>

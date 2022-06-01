@@ -19,7 +19,7 @@ function Usuarios () {
             
             <div className='spacingContainer'>
                 <Container>
-                    <Button onClick={()=>_onButtonClick()} variant="primary">Nuevo Cliente</Button>
+                    <Button className="btn-customize mb-3" onClick={()=>_onButtonClick()} variant="primary">Nuevo Cliente</Button>
                     {nuevouser ? <NuevoUsuario/> :null}
                 </Container>
                 <EncabezadoLista />

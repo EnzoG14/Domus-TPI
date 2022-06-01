@@ -15,7 +15,6 @@ const Header = () => {
             <Nav.Link href="/">Inicio</Nav.Link>
             <Nav.Link href="/catalogo">Catalogo</Nav.Link>
             <Nav.Link href="/quienessomos">Quienes somos</Nav.Link>
-            <Nav.Link href="/secretariaDC">Cambiar vista</Nav.Link>
           </Nav>
           <Nav className="wrapInicio">
           <Button className="top-1 end-0" href="/iniciarsesion">Iniciar Sesion</Button>

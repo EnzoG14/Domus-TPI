@@ -21,7 +21,7 @@ function BotonNuevaPropiedad() {
             <Button onClick={Show} className="btn-customize btnNuevaPropiedad" variant="primary" size="lg" >
             Nueva Propiedad
             </Button>
-            {boton ? <NuevaPropiedad className="pt-3"/>:null}
+            {boton ? <NuevaPropiedad className="my-3"/>:null}
     </Container>
     );
 
