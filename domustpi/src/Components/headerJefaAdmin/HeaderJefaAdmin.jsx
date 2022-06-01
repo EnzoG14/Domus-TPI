@@ -14,7 +14,7 @@ const HeaderJefaAdmin = () => {
           <Nav className="me-auto">
             <Nav.Link href="/transaccionesJefaAdmin">Transacciones</Nav.Link>
             <Nav.Link href="/clientesJefaAdmin">Clientes</Nav.Link>
-            <Nav.Link href="/reportes">Reportes</Nav.Link>
+            <Nav.Link href="/reportesJefaAdmin">Reportes</Nav.Link>
           </Nav>
           <Nav>
           <Dropdown className="btn-customize top-1 end-0">

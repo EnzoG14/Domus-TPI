@@ -7,7 +7,7 @@ import {Navbar,Nav,Dropdown,Button} from 'react-bootstrap';
 const HeaderSecretariaDC = () => {
     return (
       <Navbar className="color-navS" expand="lg">
-      <Navbar.Brand href="/clientesJefaAdmin" className='start-0'>
+      <Navbar.Brand href="/secretariaDC" className='start-0'>
         <img src={require('./src/DomusLogoEmpleados.png')} alt='logo' class='logo' />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -15,12 +15,7 @@ const HeaderSecretariaDC = () => {
         <Nav className="me-auto">
         <Nav.Link href="/Clientes">Clientes</Nav.Link>
         <Nav.Link href="/secretariaDC">Agenda</Nav.Link>
-        <Nav.Link href="/modificarCatalogo">Catalogo</Nav.Link>
-        <Nav.Link href="/transacciones">Transacciones</Nav.Link>
-        <Nav.Link href="/usuarios">Usuarios</Nav.Link>
-        <Nav.Link href="/reportes">Reportes</Nav.Link>
         <Nav.Link href="/solicitudes">Solicitudes</Nav.Link>
-        <Nav.Link href="/catalogo">Cambiar vista</Nav.Link>
         </Nav>
         <Nav>
         <Dropdown className="btn-customize top-1 end-0">
@@ -30,7 +25,7 @@ const HeaderSecretariaDC = () => {
 
           <Dropdown.Menu align={{ lg: 'end' }}>
             <Dropdown.Item href="/perfilSecretaria">Perfil</Dropdown.Item>
-            <Dropdown.Item href="/iniciarsesion">Cerrar Sesion</Dropdown.Item>
+            <Dropdown.Item href="/">Cerrar Sesion</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
         </Nav>

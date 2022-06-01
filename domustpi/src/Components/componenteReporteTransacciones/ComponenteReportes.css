@@ -1,0 +1,109 @@
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #212529;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #212529;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    /* margin-bottom: 0rem !important;  */
+    color: #212529;
+    vertical-align: top;
+    border-color: black;
+    margin-bottom: 1rem;
+}
+
+.end-0{
+    margin-right: 8rem !important;
+}
+
+.alignItem{
+    justify-content: space-between;
+}
+
+.wrapBotones{
+    width: 18%
+}
+
+.wrapReporte{
+    display: grid !important;
+    font-size: 1rem  !important;
+    padding-bottom: 0.2rem;
+    justify-content: left !important;
+    
+}
+
+.paginacionReporte{
+    display: flex !important;
+    justify-content: right !important;
+    margin-right: 2rem !important;
+}
+
+.cajaSubtotalReporte{
+    display: flex !important;
+    justify-content: right !important;
+    margin-top: 0.1rem !important;
+    margin-left: 2rem !important;
+}
+
+.tipoReporte{
+    display: flex !important;
+    padding-top: 0rem;
+    margin-left: 1.5rem !important;
+    font-weight: 1rem; 
+}
+
+.paginaReporte{
+    border: 0.15rem solid grey;
+    border-radius: 10%;
+    padding: 0rem 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.cajaReporte{
+    padding: 0.5rem 1.8rem;
+    background-color: gainsboro;
+    margin: 0rem 2.5rem;
+    padding: 1rem 1rem;
+}
+
+.subtotalReporte{
+    border: 0.15rem solid grey;
+    border-radius: 10%;
+    padding: 0rem 2rem;
+    margin-left: 0.5rem;
+    margin-right: 1rem !important; 
+}
+
+.cajaEncabezadoReportes{
+    margin-top: 1.5rem !important;
+    display: flex;
+}
+
+.MesYAñoReportes{
+    width: 38% !important;
+    font-size: 1.8rem !important;
+}
+
+.TituloResumen{
+    width: 35% !important;
+    font-weight: bold;
+    font-size: 2rem !important;
+    padding: 0rem !important;
+    text-align: center;
+}
+
+.containerEncabezadoReportes{
+    margin-right: 0rem !important;
+    margin-left: 0rem !important
+}
+
+.footerReportesVen{
+    display: grid;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}

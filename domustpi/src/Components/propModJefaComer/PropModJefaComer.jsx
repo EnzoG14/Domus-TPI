@@ -30,7 +30,7 @@ class PropModJefaComer extends Component {
         {this.props.descripcion}
         </Card.Text>
         {/* <Card.Text>{this.props.precio}</Card.Text> */}
-        <Button variant="outline-dark" href="/visualizarPropiedadesAgentesInmobiliarios" className="mb-2">Visualizar propiedad</Button>
+        <Button variant="outline-dark" href="/visualizarPropiedadesJefaComer" className="mb-2">Visualizar propiedad</Button>
     </Card.Body>
     </Card>
   );

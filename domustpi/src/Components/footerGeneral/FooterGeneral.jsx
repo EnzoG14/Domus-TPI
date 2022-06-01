@@ -1,7 +1,7 @@
 import React from 'react';
 import './FooterGeneral.css';
 import {Navbar, Nav, Container, Button,Stack} from 'react-bootstrap';
- import { FaFacebook, FaInstagram, FaGithub, FaTwitter } from "react-icons/fa";
+ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
  import { CFooter,CLink } from '@coreui/react'
 
 const FooterGeneral = () => {
@@ -30,9 +30,6 @@ const FooterGeneral = () => {
   <div class="iconos">
       <CLink href="facebook.com" class="icono">
         <FaFacebook />
-      </CLink>
-      <CLink href="github.com" class="icono">
-        <FaGithub />
       </CLink>
       <CLink href="twitter.com" class="icono">
         <FaTwitter/>

@@ -1,7 +1,3 @@
-.Pagin important{
-    border-color: rgba(70, 0, 101);
-    color: rgba(70, 0, 101);
-}
 
 .page-item.active .page-link {
     color: #fff !important;

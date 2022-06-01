@@ -8,7 +8,9 @@ import {Inicio,Catalogo,IniciarSesion,Perfil,AdministrarPropiedades,
   VisualizarPropiedadesAgentesInmobiliarios,InicioAutenticado,CatalogoAutenticado, 
   CajasCajera,EntSalCajera,TransaccionesCajera, PerfilAgenteInm, PerfilCajera, VisualizarPropiedadEmpMarketing, Reportes
   ,PerfilJefaAdmin,ClientesJefaAdmin,TransaccionesJefaAdmin, PerfilSecretaria, ReportesJefaComer, 
-  CalendarioJefaComer, CatalogoJefaComer, PerfilEmpMarketing, ClientesJefaComer, PerfilJefaComer} from  './Layouts'
+  CalendarioJefaComer, CatalogoJefaComer, PerfilEmpMarketing, ClientesJefaComer, PerfilJefaComer, 
+  PerfilGerenteGral, ReportesGerenteGral, UsuariosAdminSitio, VisualizarPropiedadesJefaComer, 
+  ReportesJefaAdmin, PerfilAdmin,VentaClientes} from  './Layouts'
 
 
 function App() {
@@ -53,6 +55,13 @@ function App() {
         <Route exact path="/catalogoJefaComer" element={<CatalogoJefaComer/>} />
         <Route exact path="/perfilEmpMarketing" element={<PerfilEmpMarketing/>} />
         <Route exact path="/perfilJefaComer" element={<PerfilJefaComer/>} />
+        <Route exact path="/perfilGerenteGral" element={<PerfilGerenteGral/>} />
+        <Route exact path="/reportesGerenteGral" element={<ReportesGerenteGral/>} />
+        <Route exact path="/usuariosAdminSitio" element={<UsuariosAdminSitio/>} />
+        <Route exact path="/visualizarPropiedadesJefaComer" element={<VisualizarPropiedadesJefaComer/>} />
+        <Route exact path="/reportesJefaAdmin" element={<ReportesJefaAdmin/>} />
+        <Route exact path="/perfilAdmin" element={<PerfilAdmin/>} />
+        <Route exact path="/ventaClientes" element={<VentaClientes/>} />
               </Routes>
       </div>
     );

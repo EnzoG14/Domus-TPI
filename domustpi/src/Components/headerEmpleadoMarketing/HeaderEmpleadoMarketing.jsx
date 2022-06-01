@@ -22,7 +22,7 @@ const HeaderEmpleadoMarketing = () => {
 
           <Dropdown.Menu align={{ lg: 'end' }}>
             <Dropdown.Item href="/perfilEmpMarketing">Perfil</Dropdown.Item>
-            <Dropdown.Item href="/iniciarsesion">Cerrar Sesion</Dropdown.Item>
+            <Dropdown.Item href="/">Cerrar Sesion</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
           </Nav>

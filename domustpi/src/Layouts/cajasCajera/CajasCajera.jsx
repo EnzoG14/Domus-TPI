@@ -1,22 +1,34 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { HeaderCajera,Alquiler,Venta,Paginacion,EncabezadoTransaccion, BotonCierreCaja,FooterGeneral} from '../../Components'
-import Container from 'react-bootstrap/Container'
+import {Container, Tab, Tabs} from 'react-bootstrap'
 
-const CajasCajera = () => {
-    return (
+function CajasCajera() {
+    const [key,setKey] = useState('nCajaA')
+
+    return(
         <>
-            <HeaderCajera />
-        <Container>
-            <h2>Caja de Alquileres</h2>
-            <Alquiler />
-            <h2>Caja de Ventas</h2>
-            <Venta />
-            <h2>Cierre de Caja</h2>
-            <div>
-                <EncabezadoTransaccion />
-            </div>
-            <Paginacion />
-            <BotonCierreCaja />
+        <HeaderCajera />
+        <Container className="mr-50 ml-50 mt-3 mb-3">
+        <Tabs
+            id="controlled-tab-example "
+            activeKey={key}
+            onSelect={(k) => setKey(k)}
+            
+            >
+            <Tab eventKey="nCajaA" title="Caja de Alquileres">
+                <Alquiler />
+            </Tab>
+            <Tab eventKey="nCajaV" title="Caja de Ventas">
+                <Venta />
+            </Tab>
+            <Tab eventKey="nCajaC" title="Cierre de Caja">
+                <div>
+                    <EncabezadoTransaccion />
+                </div>
+                <Paginacion />
+                <BotonCierreCaja />
+            </Tab>
+        </Tabs>
         </Container>
         <FooterGeneral/>
         </>

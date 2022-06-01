@@ -20,7 +20,7 @@ const HeaderClienteIniciado = () => {
           </Nav>
           <Nav className="wrapInicio">
           <Dropdown className="btn-customize top-1 end-0">
-          <Dropdown.Toggle className="btn-customize" id="dropdown-menu-align-responsive-1" >
+          <Dropdown.Toggle id="dropdown-menu-align-responsive-1" >
           <BsFillPersonFill size="1.5rem"/> Juan Perez {'\u00A0'}   
           </Dropdown.Toggle>
 

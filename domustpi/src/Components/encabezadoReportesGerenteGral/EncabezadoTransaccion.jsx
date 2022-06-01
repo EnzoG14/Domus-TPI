@@ -16,10 +16,9 @@ const EncabezadoTransaccion = () => {
             </Button>
         </Stack>
     <Table striped bordered hover>
-    <thead className="bg-customize">
+    <thead>
         <tr>
         <th>Fecha Movimiento</th>
-        <th>Codigo Mov</th>
         <th>Tipo de Movimiento</th>
         <th>Monto del Movimiento</th>
         </tr>
@@ -30,7 +29,6 @@ const EncabezadoTransaccion = () => {
                     
             <tr>
             <td>22/05/2022</td>
-            <td>001</td>    
             <td>Pago por alquiler</td>
             <td>$20.000,00</td>
             </tr>

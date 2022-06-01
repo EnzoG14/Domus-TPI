@@ -59,3 +59,8 @@ export {default as EncabezadoReportesProps} from './componenteReportesProps/Enca
 export {default as FooterReportesProps} from './componenteReportesProps/FooterReportesProps'
 export {default as PropModJefaComer} from './propModJefaComer/PropModJefaComer'
 export {default as ListadoClientes} from './listadoClientes/ListadoClientes'
+export {default as EncabezadoReporteTransacciones} from './encabezadoReporteTransacciones/EncabezadoReporteTransacciones'
+export {default as ComponenteReporteTransacciones} from './componenteReporteTransacciones/ComponenteReporteTransacciones'
+export {default as EncabezadoReportesGerenteGral} from './encabezadoReportesGerenteGral/EncabezadoReportesGerenteGral'
+export {default as FooterReporteTransacciones} from './footerReporteTransacciones/FooterReporteTransacciones'
+export {default as BannerVentaContacto} from './bannerVentaContacto/BannerVentaContacto'

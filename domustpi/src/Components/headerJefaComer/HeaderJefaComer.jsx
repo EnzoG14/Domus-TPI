@@ -20,7 +20,7 @@ const HeaderJefaComer = () => {
           <Nav className="wrapInicio">
           <Dropdown className="btn-customize top-1 end-0">
           <Dropdown.Toggle className="btn-customize" id="dropdown-menu-align-responsive-1" >
-          <BsFillPersonFill size="1.5rem"/> Jefa Comer {'\u00A0'}   
+          <BsFillPersonFill size="1.5rem"/> Jefa de Comer. {'\u00A0'}   
           </Dropdown.Toggle>
 
           <Dropdown.Menu align={{ lg: 'end' }}>

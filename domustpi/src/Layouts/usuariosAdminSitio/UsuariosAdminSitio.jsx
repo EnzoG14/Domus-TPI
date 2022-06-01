@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
-import { HeaderSecretariaDC, Paginacion,EncabezadoLista,ComponenteLista, FooterGeneral, NuevoUsuario } from '../../Components'
+import { HeaderAdminSitio, Paginacion,EncabezadoLista, FooterGeneral, NuevoUsuario } from '../../Components'
 import Button from 'react-bootstrap/Button'
-import './Usuarios.css'
+import './UsuariosAdminSitio.css'
 import Container from 'react-bootstrap/Container';
 
 
-function Usuarios () {
+function UsuariosAdminSitio () {
     const [nuevouser, setNuevouser] = useState(false);
     function _onButtonClick() {
         if (nuevouser) {
@@ -15,14 +15,14 @@ function Usuarios () {
         }}
     return (
         <>
-            <HeaderSecretariaDC />
+            <HeaderAdminSitio />
             
             <div className='spacingContainer'>
                 <Container>
-                    <Button className="btn-customize mb-3" onClick={()=>_onButtonClick()} variant="primary">Nuevo Cliente</Button>
+                    <Button className="btn-customize mb-3" onClick={()=>_onButtonClick()} variant="primary">Nuevo Usuario</Button>
                     {nuevouser ? <NuevoUsuario/> :null}
                 </Container>
-                <EncabezadoLista mostrar="si" />
+                <EncabezadoLista mostrar="no" />
             </div>
             <Paginacion />
 
@@ -31,4 +31,4 @@ function Usuarios () {
     )
 }
 
-export default Usuarios
+export default UsuariosAdminSitio

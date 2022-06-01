@@ -1,5 +1,5 @@
 import React from 'react';
-import './EncabezadoTransaccion.css'
+import './EncabezadoReportesGerenteGral.css'
 import {Stack,FloatingLabel,Form} from 'react-bootstrap';
 
 const RangoFecha = () => {
@@ -11,7 +11,15 @@ const RangoFecha = () => {
           <div className="vr" />
           <FloatingLabel controlId="floatingInputGrid" label="Hasta" >
               <Form.Control type="date" placeholder="Fecha hasta"  />
-            </FloatingLabel>
+          </FloatingLabel>
+          <FloatingLabel controlId="floatingSelectGrid" label="Tipo">
+                <Form.Select aria-label="Floating label select example">
+                    <option value="1">Venta</option>
+                    <option value="2">Alquiler</option>
+                    <option value="3">Clientes</option>
+                    <option value="4">Propiedades</option>
+                </Form.Select>
+                </FloatingLabel>
       </Stack>
   );
 }

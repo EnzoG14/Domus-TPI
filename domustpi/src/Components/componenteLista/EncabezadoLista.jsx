@@ -4,7 +4,15 @@ import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import Stack from 'react-bootstrap/Stack';
 import Container from 'react-bootstrap/Container';
-const EncabezadoLista = () => {
+
+class EncabezadoLista extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {  }
+    }
+    
+    render(){
     const Usuarios=['a','a','a','a','a','a','a','a','a','a','a']
     return (
     <Container>
@@ -12,10 +20,10 @@ const EncabezadoLista = () => {
     <thead>
         <tr>
         <th>#</th>
-        <th>First Name</th>
-        <th>Last Name</th>
+        <th>Nombre(s)</th>
+        <th>Apellidos(s)</th>
         <th>Username</th>
-        <th>Username</th>
+        <th>--------</th>
         </tr>
     </thead>
     <tbody>
@@ -30,7 +38,7 @@ const EncabezadoLista = () => {
             <td className='wrapBotones'>
             <Stack direction="horizontal" className="alignItem" > 
             <Button className="pull-right" variant="danger" href="">Dar baja</Button>
-            <Button className="pull-right" variant="warning" href="">Modificar</Button>
+            {this.props.mostrar === "si" ? <Button className="pull-right" variant="warning" href="">Modificar</Button>:null }
             </Stack>
             </td>
             </tr>
@@ -41,5 +49,5 @@ const EncabezadoLista = () => {
     </Container>
   );
 }
-
+}
 export default EncabezadoLista;
