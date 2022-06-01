@@ -1,6 +1,6 @@
 # Domus-TPI
-Trabajo practico de Diseño de sistemas
-Grupo N°1
+## Trabajo practico de Diseño de sistemas
+## Grupo N°1
 
 25406 - González Urbieta, Enzo Joaquín
 
@@ -13,9 +13,10 @@ Grupo N°1
 25651 - Chanampa, Lara Jazmin
 
 25634 - Benetucci, Ignacio Agustin
+
 ----------------------------------------------
 
-Link a la pagina 
+## Link a la pagina 
 https://domus-alpha.vercel.app/calendarioAgenteInmobiliario
 
 ----------------------------------------------
