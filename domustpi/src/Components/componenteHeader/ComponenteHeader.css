@@ -1,0 +1,25 @@
+.logo{
+    margin-left: 0rem;
+    border-radius: 10px;
+    margin-left:10px;
+    height: 60px;
+    width: 60px;
+}
+
+.nav-cliente{background-color: rgb(230, 240, 255);
+            color: black !important;}
+.nav-usuario{background-color: rgba(193, 178, 255);}
+
+.boton-usuario{
+    background-color: rgba(70, 0, 101)  !important;
+    color: #fff                         !important;
+    border-color: rgba(70, 0, 101)      !important;
+    margin-right: 8rem                    !important;
+    justify-content: flex-end             !important;}
+.boton-clienteSI{
+    color: #fff                         !important;
+    background-color: #0b5ed7           !important;
+    border-color: #0a58ca               !important;
+    margin-right: 8rem                    !important;
+    justify-content: flex-end             !important;}
+

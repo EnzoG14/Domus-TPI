@@ -10,7 +10,7 @@ import {Inicio,Catalogo,IniciarSesion,Perfil,AdministrarPropiedades,
   ,PerfilJefaAdmin,ClientesJefaAdmin,TransaccionesJefaAdmin, PerfilSecretaria, ReportesJefaComer, 
   CalendarioJefaComer, CatalogoJefaComer, PerfilEmpMarketing, ClientesJefaComer, PerfilJefaComer, 
   PerfilGerenteGral, ReportesGerenteGral, UsuariosAdminSitio, VisualizarPropiedadesJefaComer, 
-  ReportesJefaAdmin, PerfilAdmin,VentaClientes} from  './Layouts'
+  ReportesJefaAdmin, PerfilAdmin,VentaClientes, PaginaPrueba} from  './Layouts'
 
 
 function App() {
@@ -62,6 +62,7 @@ function App() {
         <Route exact path="/reportesJefaAdmin" element={<ReportesJefaAdmin/>} />
         <Route exact path="/perfilAdmin" element={<PerfilAdmin/>} />
         <Route exact path="/ventaClientes" element={<VentaClientes/>} />
+        <Route exact path="/paginaPrueba" element={<PaginaPrueba/>} />
               </Routes>
       </div>
     );
