@@ -1,5 +1,5 @@
 import React from 'react';
-import {ComponenteHeader} from '../../Components'
+import {ComponenteHeader,BannerInicio} from '../../Components'
 
 const paginaPrueba = () => {
     const links =[
@@ -15,6 +15,7 @@ const paginaPrueba = () => {
             claseBoton="boton-clienteSI end-0"
             links={links}
              />
+            <BannerInicio/>
         </div>
     );
 }
