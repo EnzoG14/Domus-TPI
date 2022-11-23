@@ -25,10 +25,10 @@ function ComponenteHeader(props){
             {estadoPantalla ==="clientes" || estadoPantalla ==="usuario" ? 
             <Dropdown className="">
                 <Dropdown.Toggle className={props.claseBoton} id="dropdown-menu-align-responsive-1" >
-                <BsFillPersonFill size="1.5rem"/> {usuario.nombre} {'\u00A0'}   
+                <BsFillPersonFill size="1.5rem"/> {usuario} {'\u00A0'}   
                 </Dropdown.Toggle>
                 <Dropdown.Menu align={{ lg: 'end' }}>
-                <Dropdown.Item href={usuario.href}>Perfil</Dropdown.Item>
+                <Dropdown.Item href={usuario}>Perfil</Dropdown.Item>
                 <Dropdown.Item href="/">Cerrar Sesion</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>: null}

@@ -1,11 +1,16 @@
 import React from "react";
 
-import {HeaderClienteIniciado,HeaderCatalogo,Propiedad,FooterGeneral} from '../../Components';
+import {ComponenteHeader,HeaderCatalogo,Propiedad,FooterGeneral} from '../../Components';
 // import HeaderCatalogo from './Components/HeaderCatalogo.jsx';
 // import Propiedad from './Components/Propiedad.jsx';
 
 
 function Catalogo() {
+  const links =[
+    {nombre: 'Inicio', href: '/inicioAutenticado'},
+    {nombre: 'Catalogo', href: '/catalogoAutenticado'},
+    {nombre: 'Propiedades', href: '/AdministrarPropiedades'},
+    {nombre: 'Reclamos', href: '/reclamos'},]
 
   const propiedades=[{direccion:'French 401',
                       precio:'$1,000,000',
@@ -42,7 +47,12 @@ function Catalogo() {
   
     return (
       <div>
-    <HeaderClienteIniciado/>
+    <ComponenteHeader
+            usuario = 'Juan Perez'
+            estadoPantalla="clientes" 
+            claseNav="nav-cliente"
+            claseBoton="boton-clienteSI end-0"
+            links={links} />
     <HeaderCatalogo/>
     <div className="col-12 p-5 row gap-4 justify-content-center">
     {propiedades.map(propiedad=>(
