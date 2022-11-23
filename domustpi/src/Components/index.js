@@ -64,3 +64,4 @@ export {default as ComponenteReporteTransacciones} from './componenteReporteTran
 export {default as EncabezadoReportesGerenteGral} from './encabezadoReportesGerenteGral/EncabezadoReportesGerenteGral'
 export {default as FooterReporteTransacciones} from './footerReporteTransacciones/FooterReporteTransacciones'
 export {default as BannerVentaContacto} from './bannerVentaContacto/BannerVentaContacto'
+export {default as BannerInicio} from './bannerInicio/BannerInicio'

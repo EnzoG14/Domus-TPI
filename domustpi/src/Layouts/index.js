@@ -42,3 +42,7 @@ export {default as UsuariosAdminSitio} from './usuariosAdminSitio/UsuariosAdminS
 export {default as VisualizarPropiedadesJefaComer} from './visualizarPropiedadesJefaComer/VisualizarPropiedadesJefaComer'
 export {default as PerfilAdmin} from './perfilAdmin/PerfilAdmin'
 export {default as VentaClientes} from './ventaClientes/VentaClientes'
+export {default as PaginaPrueba} from './paginaPrueba/PaginaPrueba'
+export {default as OpcionesReclamos} from './opcionesReclamos/OpcionesReclamos'
+export {default as CrearReclamo} from './CrearReclamo/CrearReclamo'
+export {default as SeguirReclamo} from './SeguirReclamo/SeguirReclamo'
