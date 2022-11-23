@@ -3,7 +3,7 @@ import {Card, Container, FormControl, Button, Form, Stack,Image } from 'react-bo
 
 const BannerInicio = () => {
     return (
-        <body className="home">
+        <body bannerCompra>
 
 
         </body>
